@@ -1,0 +1,11 @@
+{
+  "name": "ironclad-chat-bot",
+  "version": "1.0.0",
+  "description": "Twitch chat bot for im_ironclad's channel",
+  "main": "index.js",
+  "author": "Adam, Ironclad, Wells",
+  "license": "MIT",
+  "dependencies": {
+    "tmi.js": "^1.5.0"
+  }
+}
