@@ -5,7 +5,12 @@
   "main": "index.js",
   "author": "Adam, Ironclad, Wells",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
+    "axios": "^0.19.0",
+    "dotenv": "^8.1.0",
     "tmi.js": "^1.5.0"
   }
 }
