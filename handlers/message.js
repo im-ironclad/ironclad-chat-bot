@@ -16,7 +16,7 @@ function onMessageHandler(client) {
         createClip(client, channel);
       } else { // Beg for Authoritie
         client.say(channel,
-          `Sorry, only Ironclad can create clips right now. Please beg him for authority`
+          `Sorry, only Ironclad can create clips right now. Please beg him for authority.`
         );
       }
     }
