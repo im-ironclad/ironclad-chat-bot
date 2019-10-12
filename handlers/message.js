@@ -12,7 +12,10 @@ function onMessageHandler(client) {
 
     if (command === '!clip') {
       // Only create clips if _I_ want to
-      if (userstate.badges.broadcaster === 1) {
+      if (
+        userstate.badges &&
+        userstate.badges.broadcaster == 1
+      ) {
         createClip(client, channel);
       } else { // Beg for Authoritie
         client.say(channel,
