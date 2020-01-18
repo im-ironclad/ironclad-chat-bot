@@ -11,6 +11,9 @@ function onMessageHandler(client) {
     }
 
     if (command === '!clip') {
+      client.say(channel,
+        `Clip command received, one moment...`
+      );
       // Only create clips if _I_ want to
       if (
         userstate.badges &&

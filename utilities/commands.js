@@ -13,7 +13,7 @@ function createClip(client, channel) {
   })
   .then(async res => {
     const clipId = res.data.data[0].id;
-    
+
     if (clipId) {
       let newClip
 
@@ -54,10 +54,14 @@ function createClip(client, channel) {
     const errMessage = err.response.data.message
     
     if (errMessage.includes('offline')) {
-      console.dir(errMessage)
       client.say(
         channel,
-        `Sorry, something went wrong while creating the clip.`
+        `Sorry, can't clip an offline channel.`
+      );
+    } else {
+      client.say(
+        channel,
+        `Sorry, something went wrong with making the clip.`
       );
     }
   });
